@@ -1,0 +1,17 @@
+nav{
+  .nav{
+    max-width: 496px;
+    width: 100%;
+    ul{
+      li{
+        margin-right: 58px;
+        font-size: 16px;
+        color: #FFFFFF;
+        opacity: 0.8;
+        &:last-child{
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

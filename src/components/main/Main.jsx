@@ -1,37 +1,47 @@
-import React from 'react'
-import Button from '../buttons/Button'
-import Social from '../socials/Social'
-import Profile from '../profile/Profile'
+import React from "react";
+import styles from "./Main.module.scss";
+import Button from "../buttons/Button";
+import Social from "../socials/Social";
+import Profile from "../profile/Profile";
+import Languge from "../Languges/Languge";
 
-const Main = ({socials, BtnContent}) => {
-
-  const pfp = []
-
+const Main = ({ socials, BtnContent, profilePic, Languages, Mode }) => {
+  // console.log(Mode);
   return (
-  <>
-  <main>
-    <section className='MainSection'>
-      <div className="section-container">
-        <div className="section-content">
-          <div className="left-side">
-            <div className="title">
-              <h1>Hi, I am <br />Chukwukwe Chisom</h1>
+    <>
+      <main>
+        <section className={styles.MainSection}>
+          <div className={styles.sectionContainer}>
+            <div className={styles.sectionContet}>
+              <div className={styles.leftSide}>
+                <div className={styles.title}>
+                  <h1 className={Mode ? styles.dark : null}>
+                    Hi, I am <br />
+                    Chukwukwe Chisom
+                  </h1>
+                </div>
+                <div className={styles.job}>
+                  <span>Frontend Developer</span>
+                </div>
+                <Button BtnContent={BtnContent} />
+                <Social socials={socials} />
+              </div>
+              <div className={styles.rightSide}>
+                <Profile profilePic={profilePic} />
+              </div>
             </div>
-            <div className="job">
-              <span>Frontend Developer</span>
+          </div>
+        </section>
+        <section className={styles.Languages}>
+          <div className={styles.sectionContainer}>
+            <div className={styles.sectionContent}>
+              <Languge Mode={Mode} Languages={Languages} />
             </div>
-            <Button BtnContent={BtnContent}/>
-            <Social socials={socials}/>
           </div>
-          <div className="right-side">
-            <Profile />
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-  </>
-  )
-}
+        </section>
+      </main>
+    </>
+  );
+};
 
-export default Main
+export default Main;

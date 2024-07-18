@@ -1,0 +1,64 @@
+main {
+  .MainSection {
+    padding-top: 84px;
+    .sectionContainer {
+      margin: 0 auto;
+      max-width: 1440px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      .sectionContet {
+        max-width: 1264px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        .leftSide {
+          flex: 1;
+          max-width: 521px;
+          width: 100%;
+          padding: 123px 0px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          .title {
+            h1 {
+              font-size: 53px;
+              color: #ffffff;
+            }
+            .dark {
+              color: #455174;
+            }
+          }
+          .job {
+            span {
+              font-size: 20px;
+              color: grey;
+            }
+          }
+        }
+        .rightSide {
+          flex: 1;
+          max-width: 502px;
+          width: 100%;
+        }
+      }
+    }
+  }
+  .Languages {
+    padding: 80px 0px 132px 0px;
+    .sectionContainer {
+      margin: 0 auto;
+      max-width: 1440px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      .sectionContent {
+        max-width: 680px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+      }
+    }
+  }
+}

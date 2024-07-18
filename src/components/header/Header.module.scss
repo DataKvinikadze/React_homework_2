@@ -1,13 +1,12 @@
-header{
+header {
   padding: 26px 0px 22px 0px;
-  background-color: #222222;
-  .headerContainer{
+  .headerContainer {
     margin: 0 auto;
     max-width: 1440px;
     width: 100%;
     display: flex;
     justify-content: center;
-    .headerContent{
+    .headerContent {
       max-width: 1346px;
       width: 100%;
       padding: 0px 20px;
@@ -15,4 +14,13 @@ header{
       justify-content: space-between;
     }
   }
+  .headerContainerLight {
+  }
+}
+.underline {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #dfdfdf;
+  height: 0.1px;
 }
